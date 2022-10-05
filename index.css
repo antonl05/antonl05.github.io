@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   animation: background-image-rotate 15s linear 0ms infinite alternate ;
   background-size: cover;
   display: flex;
@@ -21,6 +21,7 @@ nav {
   background-color: crimson;
   top:0;
   left:0;
+  z-index: 9999;
   width: 100%;
   position: fixed;
   justify-content: space-evenly;
@@ -40,20 +41,45 @@ nav {
 }
 
 #introBox {
-  width: 60%;
-  height: 60%;
-  transform: translate(-50%,-50%);
   color: white;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
 }
 
-#firstScreen {
-  /*width: 100vh;
-  height: 100vh;*/
+#firstWindow {
+  display: flex;
+  text-align: center;
+  align-items: center;  
+  width: 100vw;
+  background-color: aqua;
+  height: 100vh;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#projects {
+  width: 100vw;
+  height: 90vw;
+  margin: 0 auto;
+  background-color:rgba(252, 237, 214, 0.616);
+  text-align: center;
+}
+
+#project-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#project-each-box {
+  width: 50%;
+  height: 50%;
+  background-color: crimson;
 }
