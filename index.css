@@ -2,9 +2,6 @@ body {
   overflow-x: hidden;
   animation: background-image-rotate 15s linear 0ms infinite alternate ;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 a:link {
@@ -43,34 +40,36 @@ nav {
 #introBox {
   color: white;
   margin: 0 auto;
-  position: relative;
 }
 
 #firstWindow {
   display: flex;
   text-align: center;
-  align-items: center;  
-  width: 100vw;
-  background-color: aqua;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
   height: 100vh;
 }
 
 main {
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  flex-direction: column;
 }
 #projects {
-  width: 100vw;
-  height: 90vw;
+  width: 90vw; 
   margin: 0 auto;
-  background-color:rgba(252, 237, 214, 0.616);
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255,0.8);
   text-align: center;
 }
 
 #project-parent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 5%;
   justify-content: space-evenly;
@@ -81,5 +80,33 @@ main {
 #project-each-box {
   width: 50%;
   height: 50%;
-  background-color: crimson;
+  background-color: brown;
+}
+img {
+  width: 80%;
+  height: 80%;
+  padding: 1% 1% 1% 1%;
+}
+
+#about {
+  background-color: rgba(255, 255, 255,0.6);
+  height: 90vh;
+  width: 90vw;
+  text-align: center;
+  align-items: center;
+}
+
+#contact-me {
+  background-color: antiquewhite;
+  height: 90vh;
+  width: 90vw;
+  text-align: center;
+  align-items: center;
+}
+
+footer {
+  width:90vw;
+  text-align: center;
+  height: 2em;
+  background-color:rgba(255, 255, 255,0.5);
 }
